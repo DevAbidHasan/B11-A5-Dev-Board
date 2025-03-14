@@ -46,9 +46,9 @@
                 <div class="flex items-center gap-6">
                   <div class="flex gap-2 bg-slate-200 py-2 px-4 rounded-3xl">
                     <img class="max-w-7" src="./assets/checkbox.png" alt="">
-                    <h3 class="text-lg font-bold">23</h3>
+                    <h3 id="header-task-counter" class="text-lg font-bold">23</h3>
                   </div>
-                  <img class="max-w-11 cursor-pointer rounded-full bg-slate-200 p-2" src="./assets/theme-btn.png" alt="">
+                  <img class="max-w-11 hover:bg-stone-300 cursor-pointer rounded-full bg-slate-200 p-2" src="./assets/theme-btn.png" alt="">
                   
                 </div>
               </div>
@@ -60,10 +60,10 @@
           <img class="max-w-1/2 bg-gray-200 p-3 rounded-full p-1" src="./assets/checkbox.png" alt="">
           <div class="flex space-y-2 flex-col items-start">
             <h3 class="text-xs text-gray-700">Task Assigned</h3>
-            <p id="assigned-task" class="font-bold text-xl">05</p>
+            <p id="assigned-task-counter" class="font-bold text-xl">05</p>
           </div>
         </div>
-        <div class="test-box p-0 bg-gradient-to-r from-[#3752FD] to to-[#6C7FFA] to-[#9BA8F8] text-white font-medium items-center flex space-x-3 col-span-6 row-span-2">
+        <div class="test-box hover:text-blue-200 cursor-pointer p-0 bg-gradient-to-r from-[#3752FD] to to-[#6C7FFA] to-[#9BA8F8] text-white font-medium items-center flex space-x-3 col-span-6 row-span-2">
           <img class="max-w-1/5" src="./assets/board.png" alt="">
           <h2 class="text-lg">
             Discover Something<br> New Today!
@@ -95,7 +95,7 @@
               <p>21 April 2025</p>
             </div>
             <div>
-              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+              <button id="ShopEase-btn" class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
               <p>21 April 2025</p>
             </div>
             <div>
-              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+              <button id="cloud-btn" class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@
               <p>21 April 2025</p>
             </div>
             <div>
-              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+              <button id="swiftpay-btn" class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
               <p>21 April 2025</p>
             </div>
             <div>
-              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+              <button id="meta-btn" class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@
               <p>21 April 2025</p>
             </div>
             <div>
-              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+              <button id="google-btn" class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@
               <p>21 April 2025</p>
             </div>
             <div>
-              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+              <button id="Glassdoar-btn" class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
             </div>
           </div>
         </div>
@@ -186,7 +186,8 @@
     </footer>
 
 
-
+    <script src="./script/tasks.js"></script>
+    <script src="./script/utilities.js"></script>
     <script>
       function showDateAndDay() {
           let today = new Date();
@@ -194,6 +195,8 @@
           let formattedDate = today.toLocaleDateString('en-US', options);
 
           document.getElementById("date-day").innerText = formattedDate;
+
+          
       }
 
       showDateAndDay(); // Call the function
