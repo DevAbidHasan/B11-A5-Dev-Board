@@ -20,10 +20,20 @@
         font-family: "Poppins", sans-serif;
         font-style: normal;
       }
+
+      .test-box{
+        padding: 20px;
+        margin: 5px;
+        gap: 5px;
+        border: 1px solid rgb(228, 226, 226);
+        border-radius: 5px;
+        background-color: white;
+        /* opacity: 0.2; */
+      }
     </style>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
   </head>
-  <body class="poppins-font bg-slate-100 px-5 py-2">
+  <body class="poppins-font bg-slate-100 px-5 pt-2">
     <header>
         <nav>
             <div class="navbar bg-base-100 rounded-lg shadow-sm">
@@ -34,22 +44,159 @@
                   </div>
                 </div>
                 <div class="flex items-center gap-6">
-                  <div class="flex gap-2 bg-slate-200 p-2 rounded-lg">
+                  <div class="flex gap-2 bg-slate-200 py-2 px-4 rounded-3xl">
                     <img class="max-w-7" src="./assets/checkbox.png" alt="">
                     <h3 class="text-lg font-bold">23</h3>
                   </div>
-                  <img class="max-w-11 cursor-pointer rounded-lg bg-slate-200 p-2" src="./assets/theme-btn.png" alt="">
+                  <img class="max-w-11 cursor-pointer rounded-full bg-slate-200 p-2" src="./assets/theme-btn.png" alt="">
                   
                 </div>
               </div>
         </nav>
     </header>
     <main>
+      <section class="grid my-10 gap-4 grid-cols-16 border border-gray-300 bg-blue-100 py-8 px-3 rounded-md grid-rows-12">
+        <div class="test-box flex items-center bg-gray-200 justify-start space-x-2 col-span-3 row-span-2">
+          <img class="max-w-1/2 bg-gray-200 p-3 rounded-full p-1" src="./assets/checkbox.png" alt="">
+          <div class="flex space-y-2 flex-col items-start">
+            <h3 class="text-xs text-gray-700">Task Assigned</h3>
+            <p id="assigned-task" class="font-bold text-xl">05</p>
+          </div>
+        </div>
+        <div class="test-box p-0 bg-gradient-to-r from-[#3752FD] to to-[#6C7FFA] to-[#9BA8F8] text-white font-medium items-center flex space-x-3 col-span-6 row-span-2">
+          <img class="max-w-1/5" src="./assets/board.png" alt="">
+          <h2 class="text-lg">
+            Discover Something<br> New Today!
+          </h2>
+        </div>
+        <div class="test-box flex items-center space-x-2 col-span-3 row-span-2">
+          <img src="./assets/calender.png" alt="">
+          
+          <div><p class="text-sm text-green-500" id="date-day"></p></div>
 
+        </div>
+        <div class="test-box flex flex-col items-center space-y-5 col-span-4 row-span-12">
+          <div class="flex gap-5 items-center justify-between">
+            <img src="./assets/activity.png" alt="">
+            <h2>Activity Log</h2>
+          </div>
+          <div class="">
+            <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Clear History</button>
+          </div>
+        </div>
+        <div class="test-box col-span-4 row-span-5">
+          <h2 class="text-xs mb-8 w-1/3 p-2 text-center rounded-md bg-gray-100 text-blue-500">ShopEase</h2>
+          <h2 class="font-semibold mb-8">Fix Mobile Button Issue </h2>
+          <p class="text-xs bg-gray-100 p-5 rounded text-justify mb-10">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-1 flex-col">
+              <p class="text-xs text-gray-500">Deadline</p>
+              <p>21 April 2025</p>
+            </div>
+            <div>
+              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="test-box col-span-4 row-span-5">
+          <h2 class="text-xs mb-8 w-1/3 p-2 text-center rounded-md bg-gray-100 text-blue-500">CloudSync</h2>
+          <h2 class="font-semibold mb-8">Add Dark Mode</h2>
+          <p class="text-xs bg-gray-100 p-5 rounded text-justify mb-10">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-1 flex-col">
+              <p class="text-xs text-gray-500">Deadline</p>
+              <p>21 April 2025</p>
+            </div>
+            <div>
+              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="test-box col-span-4 row-span-5">
+          <h2 class="text-xs mb-8 w-1/3 p-2 text-center rounded-md bg-gray-100 text-blue-500">SwiftPay</h2>
+          <h2 class="font-semibold mb-8">Optimize Home Page</h2>
+          <p class="text-xs bg-gray-100 p-5 rounded text-justify mb-10">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-1 flex-col">
+              <p class="text-xs text-gray-500">Deadline</p>
+              <p>21 April 2025</p>
+            </div>
+            <div>
+              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="test-box col-span-4 row-span-5">
+          <h2 class="text-xs mb-8 w-1/3 p-2 text-center rounded-md bg-gray-100 text-blue-500 ">Meta</h2>
+          <h2 class="font-semibold mb-8">Add New Emoji</h2>
+          <p class="text-xs bg-gray-100 p-5 rounded text-justify mb-10">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-1 flex-col">
+              <p class="text-xs text-gray-500">Deadline</p>
+              <p>21 April 2025</p>
+            </div>
+            <div>
+              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="test-box col-span-4 row-span-5">
+          <h2 class="text-xs mb-8 w-1/2 p-2 text-center rounded-md bg-gray-100 text-blue-500 ">Google LLC</h2>
+          <h2 class="font-semibold mb-8">Integrate OpenAI API</h2>
+          <p class="text-xs bg-gray-100 p-5 rounded text-justify mb-10">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-1 flex-col">
+              <p class="text-xs text-gray-500">Deadline</p>
+              <p>21 April 2025</p>
+            </div>
+            <div>
+              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+            </div>
+          </div>
+        </div>
+        <div class="test-box col-span-4 row-span-5">
+          <h2 class="text-xs mb-8 w-1/3 p-2 text-center rounded-md bg-gray-100 text-blue-500 ">Glassdoar</h2>
+          <h2 class="font-semibold mb-8">Improve Job Searching</h2>
+          <p class="text-xs bg-gray-100 p-5 rounded text-justify mb-10">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly</p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-1 flex-col">
+              <p class="text-xs text-gray-500">Deadline</p>
+              <p>21 April 2025</p>
+            </div>
+            <div>
+              <button class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Completed</button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
     </main>
     <footer>
+      <section class="mt-10 text-center py-10 text-white  bg-black">
+        <h2 class="font-bold">All rights reserved by Abid Hasan Plabon</h2>
+        <p>Email: abidhasanplabon80@gmail.com</p>
+      </section>
 
     </footer>
 
+
+
+    <script>
+      function showDateAndDay() {
+          let today = new Date();
+          let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          let formattedDate = today.toLocaleDateString('en-US', options);
+
+          document.getElementById("date-day").innerText = formattedDate;
+      }
+
+      showDateAndDay(); // Call the function
+  </script>
   </body>
 </html>
