@@ -6,16 +6,18 @@ activityTest("meta-btn", "meta-title");
 activityTest("google-btn", "google-title");
 activityTest("Glassdoar-btn", "Glassdoar-title");
 
-// History Clear Button Functionalities
-const activityLogBtn=document.getElementById("activity-log-btn");
-document.getElementById("activity-log-btn")
-.addEventListener("click", function(event){
-    alert("Confirm to Delete Activity Log?");
-    // document.getElementById("activity-log-btn").innerText="History Cleared";
-    // document.getElementById("activity-log-btn").style.backgroundColor="gray";
-    // document.getElementById("activity-log-btn").style.cursor="default";
-    // activityLogBtn.disabled=true;
-   
-    document.getElementById('activity-log-text').style.display='none';
-    
+// Random Background Color Generator:
+const hexvalues=["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
+let randomColor = () => {
+    let hex ='#';
+    for(let i=0;i<6;i++){
+        let randomIndex=Math.floor(hexvalues.length * Math.random());
+        let randomValue=hexvalues[randomIndex];
+        hex=hex+randomValue;
+    }
+    return hex;
+}
+
+document.getElementById("theme-generator").addEventListener("click", function(event){
+    document.getElementById("main-section").style.backgroundColor=randomColor();
 })
