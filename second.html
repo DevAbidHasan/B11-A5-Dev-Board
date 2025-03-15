@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Something New</title>
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Daisy UI CDN setup -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-font {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+        }
+      </style>
+      <link rel="shortcut icon" href="./assets/board.png" type="image/x-icon">
+</head>
+<body class="poppins-font bg-slate-100 px-5 pt-2">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 rounded-lg shadow-sm">
+              <div class="flex-1">
+                <div class="flex items-center">
+                  <img class="max-w-8" src="./assets/logo.png" alt="" />
+                  <a class="px-2 text-xl"
+                    >Dev<span class="font-bold">Board</span></a
+                  >
+                </div>
+              </div>
+              <div id="backToDesk-btn" class="">
+                <a href="index.html"><button  class="bg-blue-600 cursor-pointer hover:bg-black text-white p-2 rounded-sm">Back to Desk</button></a>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="mb-4 pb-10 pt-2 px-2">
+      <h2 class="text-center p-5  font-semibold"><span class="text-red-500 text-5xl font-bold">B</span><span class="font-bold text-4xl underline text-blue-600">lo</span><span class="text-5xl">gs</span></h2>
+      <!-- question-1 -->
+      <div class="border border-gray-300 p-6 my-6 rounded bg-slate-50">
+        <div>
+          <h2 class="font-semibold">Question-1 : What are the different ways to select an element in the DOM ?</h2>
+          <br>
+        </div>
+        <div class="text-gray-600">
+          <h2>Answer : There are different ways to select an element in the DOM.</h2><br>
+          <ol>
+            <li>1. document.getElementById("id") ; Selects an element by its ID.</li>
+            <li>2. document.getElementsByClassName("class") ; Selects an element by Class Name.</li>
+            <li>3. document.getElementsByClassName("tag") ; Selects an element by Tag Name.</li>
+            <li>4. document.querySelectorAll("selector") ; Selects all matching elements using a CSS selector.</li>
+          </ol>
+        </div>
+      </div>
+      <!-- question-2 -->
+      <div class="border border-gray-300 p-6 my-6 rounded bg-slate-50">
+        <div>
+          <h2 class="font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+          <br>
+        </div>
+        <div class="text-gray-600">
+          <h2> Answer : <br><br>
+            <span class="font-bold">1. innerHTML</span>: Returns or sets the HTML content inside an element, including any HTML tags.<br>
+            <span class="font-bold">2. innerText</span>: Returns or sets only the visible text inside an element, ignoring hidden elements and extra spaces.<br>
+            <span class="font-bold">3. textContent</span>: Returns or sets all text inside an element, including hidden text, without parsing HTML.
+          </h2>
+        </div>
+      </div>
+      <!-- question-3 -->
+      <div class="border border-gray-300 p-6 my-6 rounded bg-slate-50">
+        <div>
+          <h2 class="font-semibold">Question-3: What is event delegation in the DOM ?
+          </h2>
+          <br>
+        </div>
+        <div class="text-gray-600">
+          <h2> Answer : <br><br>
+          <h2 >Event Delegation in the DOM is a technique where a single event listener is added to a parent element to handle events on its child elements, even if they are added dynamically. It works by taking advantage of event bubbling, where events propagate up from the target element to its ancestors.</h2>
+          </h2>
+        </div>
+      </div>
+      <!-- question-4 -->
+      <div class="border border-gray-300 p-6 my-6 rounded bg-slate-50">
+        <div>
+          <h2 class="font-semibold">Question-4: What is event bubbling in the DOM?
+          </h2>
+          <br>
+        </div>
+        <div class="text-gray-600">
+          <h2> Answer : <br><br>
+          <h2 >Event Bubbling in the DOM is a mechanism where an event triggered on a child element propagates up through its parent elements until it reaches the root of the document.</h2>
+          </h2>
+        </div>
+      </div>
+      <!-- question-5 -->
+      <div class="border border-gray-300 p-6 my-6 rounded bg-slate-50">
+        <div>
+          <h2 class="font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?
+          </h2>
+          <br>
+        </div>
+        <div class="text-gray-600">
+          <h2> Answer : <br><br>
+          <h2>
+            <span class="font-semibold">1. Creating Element</span> : By using 'document.createElement()' command.<br>
+          </h2>
+          <h2>
+            <span class="font-semibold">2. Adding Element</span> : By using appendChild() or append() to add it inside a parent element.<br>
+          </h2>
+          <h2>
+            <span class="font-semibold">3. Removing Element</span> : By using removeChild() or remove() command.
+          </h2>
+          </h2>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="./script/acvititylog.js"></script>
+    <script src="./script/tasks.js"></script>
+    <script src="./script/button.js"></script>
+
+</body>
+</html>

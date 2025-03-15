@@ -80,12 +80,12 @@
             <p id="assigned-task-counter" class="font-bold text-xl">06</p>
           </div>
         </div>
-        <div
+        <div id="discover-something-box"
           class="test-box hover:text-blue-200 cursor-pointer p-0 bg-gradient-to-r from-[#3752FD] to to-[#6C7FFA] to-[#9BA8F8] text-white font-medium items-center flex space-x-3 col-span-6 row-span-2"
         >
           <img class="max-w-1/5" src="./assets/board.png" alt="" />
           <h2 class="text-lg">
-            Discover Something<br />
+            Discover Something <br/>
             New Today!
           </h2>
         </div>
@@ -327,7 +327,7 @@
           const title = document.getElementById(id2).innerText;
           const time=getCurrentTime();
           div.innerHTML = `<section id="activity-log-text" >
-          <p class="text-gray-600 border border-blue-300 px-3 py-4 rounded-md bg-gray-100 text-sm">You have Completed The Task <span class="text-gray-900 font-semibold">${title}</span> at <span class="text-red-500">${time}</span></p>
+          <p class="text-gray-600 border border-gray-200 px-3 py-4 rounded-xl bg-gray-100 text-sm">You have Completed The Task <span class="text-gray-900 font-semibold">${title}</span> at <span class="text-red-500">${time}</span></p>
           </section
         `;
             
